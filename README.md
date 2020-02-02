@@ -1,23 +1,21 @@
 # Rick and Morty API
 
-Esta API em Ruby fornece 
+Esta API retorna o Nome e a Data em que um personagem da série Rick and Morty foi ao ar pela primeira vez. Basta apenas informar o ID de um personagem e Wubba Lubba Dub Dub!
 
-Things you may want to cover:
+Como rodar este projeto:
 
-* Ruby version
+* Clonar o projeto
 
-* System dependencies
+* Executar o ```bundle install```
 
-* Configuration
+* Executar ```rails s```
 
-* Database creation
+* No browser fazer a requisição GET, passando o id do personagem: ```localhost:3000/api/v1/characters/(id do personagem)```
 
-* Database initialization
+Para rodar os testes:
 
-* How to run the test suite
+* Execute ```rspec spec/requests/get_character_air_date_spec.rb:5``` para visualizar o cenário de sucesso
 
-* Services (job queues, cache servers, search engines, etc.)
+* Execute ```rspec spec/requests/get_character_air_date_spec.rb:16``` para visualizar o cenário de erro 404
 
-* Deployment instructions
-
-* ...
+* Execute ```rspec spec/requests/get_character_air_date_spec.rb:26``` para visualizar o cenário de erro 500
